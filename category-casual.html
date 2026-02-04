@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casual & Lawn | Noor-e-Libas</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="laddies-style.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-brand">
+                <img src="noorelibas_logo.png" alt="Noor-e-Libas"
+                    style="width: 150px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.3));">
+            </div>
+            <ul class="nav-links">
+                <li><a href="laddies-home.html"><ion-icon name="home-outline"></ion-icon> <span>Home</span></a></li>
+                <li><a href="laddies-shop.html"><ion-icon name="bag-handle-outline"></ion-icon> <span>Shop
+                            All</span></a></li>
+                <li><a href="category-bridal.html"><ion-icon name="heart-outline"></ion-icon> <span>Bridal</span></a>
+                </li>
+                <li><a href="category-party.html"><ion-icon name="star-outline"></ion-icon> <span>Party Wear</span></a>
+                </li>
+                <li><a href="category-casual.html" class="active"><ion-icon name="leaf-outline"></ion-icon>
+                        <span>Casual</span></a></li>
+                <li><a href="laddies-about.html"><ion-icon name="people-outline"></ion-icon> <span>About</span></a></li>
+                <li><a href="laddies-contact.html"><ion-icon name="call-outline"></ion-icon> <span>Contact</span></a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="page-header">
+                <h2 class="page-title">Casual Lawn Collection</h2>
+            </div>
+
+            <div class="products-grid">
+
+                <!-- Product 1 -->
+                <div class="product-card"
+                    data-desc="Classic Black Lawn suit with colorful digital print and chiffon dupatta. A staple for your summer wardrobe that combines style with comfort.">
+                    <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?q=80&w=1924&auto=format&fit=crop"
+                        class="product-image" alt="Black Lawn">
+                    <div class="product-info">
+                        <h3 class="product-title">Midnight Garden Lawn</h3>
+                        <p class="product-price">$45.00</p>
+                        <button class="read-more-btn">Read More</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 (New) -->
+                <div class="product-card"
+                    data-desc="Breezy sky blue cotton kurta with delicate white lace details. Perfect for daily office or university wear.">
+                    <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=1976&auto=format&fit=crop"
+                        class="product-image" alt="Sky Blue Kurta">
+                    <div class="product-info">
+                        <h3 class="product-title">Summer Breeze Kurta</h3>
+                        <p class="product-price">$35.00</p>
+                        <button class="read-more-btn">Read More</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 (New) -->
+                <div class="product-card"
+                    data-desc="Vibrant orange and pink printed Khaddar suit for the winter season. Warm, stylish, and durable fabric.">
+                    <img src="https://images.unsplash.com/photo-1596483501716-e41718055664?q=80&w=2070&auto=format&fit=crop"
+                        class="product-image" alt="Winter Khaddar">
+                    <div class="product-info">
+                        <h3 class="product-title">Printed Winter Khaddar</h3>
+                        <p class="product-price">$55.00</p>
+                        <button class="read-more-btn">Read More</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="modal-left">
+                <img src="" id="modal-img" class="modal-image" alt="Product Detail">
+            </div>
+            <div class="modal-right">
+                <div id="product-details-view">
+                    <div class="modal-details">
+                        <h2 id="modal-title"></h2>
+                        <p class="modal-price" id="modal-price"></p>
+                        <p style="font-weight: bold; margin-bottom: 5px;">Description:</p>
+                        <p class="modal-desc" id="modal-desc"></p>
+                        <button class="modal-btn" id="add-to-cart-btn">Add to Cart & Buy</button>
+                    </div>
+                </div>
+                <div id="order-form-view" class="order-form-container">
+                    <h3 style="margin-bottom: 1rem; color: #333;">Complete Your Order</h3>
+                    <form onsubmit="event.preventDefault(); alert('Order Placed Successfully!'); location.reload();">
+                        <div class="form-group"><label>Full Name</label><input type="text" required
+                                placeholder="John Doe"></div>
+                        <div class="form-group"><label>Phone Number</label><input type="tel" required
+                                placeholder="+92 300 1234567"></div>
+                        <div class="form-group"><label>Shipping Address</label><textarea rows="2" required
+                                placeholder="House #, Street, City"></textarea></div>
+                        <button type="submit" class="submit-btn" style="margin-bottom: 10px;">Confirm Order</button>
+                        <button type="button" class="read-more-btn" id="back-to-details"
+                            style="width: 100%; text-align: center; display:block;">Back</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="laddies-script.js"></script>
+</body>
+
+</html>

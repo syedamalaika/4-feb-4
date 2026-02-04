@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Noor-e-Libas</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="laddies-style.css">
+    <style>
+        /* Specific Styles for About Page */
+        .sculpture-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-box {
+            text-align: center;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.1);
+            /* Glass effect for boxes */
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-5px);
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .feature-box ion-icon {
+            font-size: 3rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            font-family: var(--font-heading);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="app-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-brand">
+                <img src="noorelibas_logo.png" alt="Noor-e-Libas"
+                    style="width: 150px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.3));">
+            </div>
+            <ul class="nav-links">
+                <li><a href="laddies-home.html"><ion-icon name="home-outline"></ion-icon> <span>Home</span></a></li>
+                <li><a href="laddies-shop.html"><ion-icon name="bag-handle-outline"></ion-icon> <span>Shop</span></a>
+                </li>
+                <li><a href="laddies-about.html" class="active"><ion-icon name="people-outline"></ion-icon>
+                        <span>About</span></a></li>
+                <li><a href="laddies-contact.html"><ion-icon name="call-outline"></ion-icon> <span>Contact</span></a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="page-header">
+                <h2 class="page-title">Our Heritage</h2>
+            </div>
+
+            <div class="content-section">
+                <img src="https://images.unsplash.com/photo-1550614000-4b9519e00086?q=80&w=2000&auto=format&fit=crop"
+                    alt="Embroidery work" class="sculpture-img">
+
+                <h3 style="color: var(--primary-color); margin-bottom: 1rem; font-size: 1.8rem;">Weaving Tradition into
+                    Modernity</h3>
+                <p style="margin-bottom: 2rem; line-height: 1.8; color: #444; font-size: 1.1rem;">
+                    Welcome to <strong>Noor-e-Libas</strong>, a boutique that stands at the intersection of timeless
+                    Pakistani tradition and contemporary fashion. Established in the heart of Lahore, our journey began
+                    with a singular vision: to revive the lost art of hand-embroidery and present it to the modern
+                    woman.
+                </p>
+                <p style="margin-bottom: 2rem; line-height: 1.8; color: #444; font-size: 1.1rem;">
+                    Each piece in our collection is not just a dress, but a labor of love. We collaborate with skilled
+                    artisans from rural Punjab and Sindh, ensuring that every stitch tells a story of culture,
+                    dedication, and artistry.
+                </p>
+
+                <!-- Stats / Why Choose Us -->
+                <div class="features-grid">
+                    <div class="feature-box">
+                        <ion-icon name="diamond-outline"></ion-icon>
+                        <h4>Premium Quality</h4>
+                        <p style="font-size: 0.9rem; margin-top: 10px; opacity: 0.8;">Finest fabrics sourced globally.
+                        </p>
+                    </div>
+                    <div class="feature-box">
+                        <ion-icon name="cut-outline"></ion-icon>
+                        <h4>Custom Fitting</h4>
+                        <p style="font-size: 0.9rem; margin-top: 10px; opacity: 0.8;">Tailored to perfection for you.
+                        </p>
+                    </div>
+                    <div class="feature-box">
+                        <ion-icon name="earth-outline"></ion-icon>
+                        <h4>Global Shipping</h4>
+                        <p style="font-size: 0.9rem; margin-top: 10px; opacity: 0.8;">Delivering elegance everywhere.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="features-grid" style="border-top: 1px solid rgba(0,0,0,0.1); padding-top: 2rem;">
+                    <div style="text-align: center;">
+                        <div class="stat-number">10+</div>
+                        <p>Years Experience</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div class="stat-number">5k+</div>
+                        <p>Happy Customers</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div class="stat-number">50+</div>
+                        <p>Artisans Empowered</p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="laddies-script.js"></script>
+</body>
+
+</html>

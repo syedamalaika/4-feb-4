@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Noor-e-Libas</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="laddies-style.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-brand">
+                <img src="noorelibas_logo.png" alt="Noor-e-Libas"
+                    style="width: 150px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.3));">
+            </div>
+            <ul class="nav-links">
+                <li><a href="laddies-home.html"><ion-icon name="home-outline"></ion-icon> <span>Home</span></a></li>
+                <li><a href="laddies-shop.html" class="active"><ion-icon name="bag-handle-outline"></ion-icon>
+                        <span>Shop</span></a></li>
+                <li><a href="laddies-about.html"><ion-icon name="people-outline"></ion-icon> <span>About</span></a></li>
+                <li><a href="laddies-contact.html"><ion-icon name="call-outline"></ion-icon> <span>Contact</span></a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="page-header">
+                <h2 class="page-title">Our Exclusive Collection</h2>
+            </div>
+
+            <div class="products-grid">
+
+                <!-- Product 1 -->
+                <div class="product-card"
+                    data-desc="A stunning Deep Maroon Velvet suit featuring intricate golden Zari work. Perfect for winter weddings and formal gatherings. Includes a heavy embroidered shawl.">
+                    <img src="https://images.unsplash.com/photo-1596483501174-a69074ed2f45?q=80&w=2070&auto=format&fit=crop"
+                        class="product-image" alt="Maroon Velvet">
+                    <div class="product-info">
+                        <h3 class="product-title">Royal Maroon Velvet</h3>
+                        <p class="product-price">$120.00</p>
+                        <button class="read-more-btn">Read More</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card"
+                    data-desc="Elegant White Chiffon dress with delicate pearl embellishments and thread work. This ethereal piece comes with a soft net dupatta and trousers.">
+                    <img src="https://images.unsplash.com/photo-1629853907498-500b5220c3a8?q=80&w=1974&auto=format&fit=crop"
+                        class="product-image" alt="White Chiffon">
+                    <div class="product-info">
+                        <h3 class="product-title">Ethereal White Chiffon</h3>
+                        <p class="product-price">$95.00</p>
+                        <button class="read-more-btn">Read More</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card"
+                    data-desc="A vibrant Yellow Mehndi outfit designed with floral patterns and mirror work. Lightweight and comfortable for long festivities.">
+                    <img src="https://images.unsplash.com/photo-1512413914633-b5043f4041ea?q=80&w=2038&auto=format&fit=crop"
+                        class="product-image" alt="Yellow Mehndi">
+                    <div class="product-info">
+                        <h3 class="product-title">Sunny Mehndi Vibes</h3>
+                        <p class="product-price">$80.00</p>
+                        <button class="read-more-btn">Read More</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card"
+                    data-desc="Classic Black Lawn suit with colorful digital print and chiffon dupatta. A staple for your summer wardrobe that combines style with comfort.">
+                    <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?q=80&w=1924&auto=format&fit=crop"
+                        class="product-image" alt="Black Lawn">
+                    <div class="product-info">
+                        <h3 class="product-title">Midnight Garden Lawn</h3>
+                        <p class="product-price">$45.00</p>
+                        <button class="read-more-btn">Read More</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card"
+                    data-desc="Heavily embroidered Bridal Lehnga in traditional red and gold. Features hand-crafted stone work and a majestic trail. Must-have for the big day.">
+                    <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=2866&auto=format&fit=crop"
+                        class="product-image" alt="Bridal Red">
+                    <div class="product-info">
+                        <h3 class="product-title">Traditional Bridal Red</h3>
+                        <p class="product-price">$450.00</p>
+                        <button class="read-more-btn">Read More</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card"
+                    data-desc="Pastel Green Organza frock with silver tilla work. This modern silhouette offers a refreshing look for evening parties.">
+                    <img src="https://images.unsplash.com/photo-1610992383182-5c8e31003661?q=80&w=1969&auto=format&fit=crop"
+                        class="product-image" alt="Pastel Organza">
+                    <div class="product-info">
+                        <h3 class="product-title">Mint Organza Delight</h3>
+                        <p class="product-price">$110.00</p>
+                        <button class="read-more-btn">Read More</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Product Detail Modal (Popup) -->
+    <div class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="modal-left">
+                <img src="" id="modal-img" class="modal-image" alt="Product Detail">
+            </div>
+
+            <div class="modal-right">
+                <!-- Product Details View -->
+                <div id="product-details-view">
+                    <div class="modal-details">
+                        <h2 id="modal-title">Product Title</h2>
+                        <p class="modal-price" id="modal-price">$0.00</p>
+                        <p style="font-weight: bold; margin-bottom: 5px;">Description:</p>
+                        <p class="modal-desc" id="modal-desc">Product description goes here...</p>
+
+                        <button class="modal-btn" id="add-to-cart-btn">Add to Cart & Buy</button>
+                    </div>
+                </div>
+
+                <!-- Order Form View (Hidden by default) -->
+                <div id="order-form-view" class="order-form-container">
+                    <h3 style="margin-bottom: 1rem; color: #333;">Complete Your Order</h3>
+                    <form onsubmit="event.preventDefault(); alert('Order Placed Successfully!'); location.reload();">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" required placeholder="+92 300 1234567">
+                        </div>
+                        <div class="form-group">
+                            <label>Shipping Address</label>
+                            <textarea rows="2" required placeholder="House #, Street, City"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn" style="margin-bottom: 10px;">Confirm Order</button>
+                        <button type="button" class="read-more-btn" id="back-to-details"
+                            style="width: 100%; text-align: center; display:block;">Back</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="laddies-script.js"></script>
+</body>
+
+</html>
